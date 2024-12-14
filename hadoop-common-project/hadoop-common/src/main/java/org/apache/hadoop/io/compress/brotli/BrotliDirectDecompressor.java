@@ -40,7 +40,6 @@ public class BrotliDirectDecompressor implements DirectDecompressor {
 
     @Override
     public void decompress(ByteBuffer src, ByteBuffer dst) throws IOException {
-
         int toRead = src.remaining();
         byte[] compressed = new byte[toRead];
         src.get(compressed, 0, toRead);
